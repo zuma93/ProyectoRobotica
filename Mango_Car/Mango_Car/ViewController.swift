@@ -50,9 +50,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         locationManager.requestWhenInUseAuthorization()
         mapView.showsUserLocation = true
         
-        print(mapView.userLocation.coordinate)
+       // print(mapView.userLocation.coordinate)
         
-        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.1, 0.1))
+        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.05, 0.05))
         mapView.region = mapRegion
         mapView.delegate = self
         
@@ -70,7 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        print(locations[0])
-        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.1, 0.1))
+        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.05, 0.05))
         mapView.setRegion(mapRegion, animated: true)
     }
 
