@@ -108,7 +108,7 @@
 				TargetAttributes = {
 					81DE81BF1DCC07C800086F27 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5YAWLDD74S;
+						DevelopmentTeam = BZFQ9VB5TM;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -278,8 +278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5YAWLDD74S;
+				DEVELOPMENT_TEAM = BZFQ9VB5TM;
 				INFOPLIST_FILE = Mango_Car/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devma.Mango-Car";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,8 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5YAWLDD74S;
+				DEVELOPMENT_TEAM = BZFQ9VB5TM;
 				INFOPLIST_FILE = Mango_Car/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devma.Mango-Car";
 				PRODUCT_NAME = "$(TARGET_NAME)";
