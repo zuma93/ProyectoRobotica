@@ -36,10 +36,18 @@
                                     <action selector="mostrarButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVU-MX-rlB"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-7X-MOH">
+                                <rect key="frame" x="16" y="588" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchTapped" destination="BYZ-38-t0r" eventType="valueChanged" id="OHK-8B-0vY"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Vp0-7X-MOH" firstAttribute="top" secondItem="NQG-zn-gSc" secondAttribute="bottom" constant="8" id="1Xp-Lu-55j"/>
                             <constraint firstAttribute="leadingMargin" secondItem="NQG-zn-gSc" secondAttribute="leading" id="T6g-xL-bhR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Vp0-7X-MOH" secondAttribute="leading" id="aPj-iA-y9o"/>
                             <constraint firstItem="NQG-zn-gSc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="hba-1B-JXt"/>
                             <constraint firstItem="0ya-8W-9eL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jI1-5N-uAy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NQG-zn-gSc" secondAttribute="bottom" constant="87" id="kpw-wu-qtF"/>
@@ -50,6 +58,7 @@
                     <navigationItem key="navigationItem" title="MangoCar" id="Puh-2f-U8F"/>
                     <connections>
                         <outlet property="mapView" destination="NQG-zn-gSc" id="bcA-tT-WCa"/>
+                        <outlet property="mySwitch" destination="Vp0-7X-MOH" id="veo-xo-aAr"/>
                         <segue destination="hDL-Md-X0F" kind="show" identifier="MostrarSecondID" id="ahW-6q-6i1"/>
                     </connections>
                 </viewController>

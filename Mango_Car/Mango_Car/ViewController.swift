@@ -15,6 +15,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     var locationManager = CLLocationManager()
     
+    @IBOutlet weak var mySwitch: UISwitch!
+    var trackingGPS = true
+    
+    @IBAction func switchTapped() {
+        trackingGPS = mySwitch.isOn
+    }
+    
+    
     @IBAction func longPressRecognized(_ sender: UILongPressGestureRecognizer) {
 //        print(sender)
         let viewCoordinate = sender.location(in: mapView)
@@ -22,7 +30,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let annotation = MKPointAnnotation()
         annotation.coordinate = mapCoordinate
         annotation.title = "Touch"
+        sender.isEnabled = false
         mapView.addAnnotation(annotation)
+        sender.isEnabled = true
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -52,7 +62,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
        // print(mapView.userLocation.coordinate)
         
-        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.05, 0.05))
+        let mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 19.40907985145731, longitude: -99.180971328193905), span: MKCoordinateSpanMake(0.005, 0.005))
         mapView.region = mapRegion
         mapView.delegate = self
         
@@ -69,9 +79,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        print(locations[0])
-        let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpanMake(0.05, 0.05))
-        mapView.setRegion(mapRegion, animated: true)
+        if trackingGPS
+        {
+            let mapSpan = mapView.region.span
+            let mapRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: mapSpan)
+            mapView.setRegion(mapRegion, animated: true)
+        }
     }
 
     @IBAction func mostrarButtonTapped() {
