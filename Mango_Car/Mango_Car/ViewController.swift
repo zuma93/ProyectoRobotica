@@ -29,7 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let mapCoordinate = mapView.convert(viewCoordinate, toCoordinateFrom: mapView)
         let annotation = MKPointAnnotation()
         annotation.coordinate = mapCoordinate
-        annotation.title = "Touch"
+        annotation.title = "Nuevo Pin"
         sender.isEnabled = false
         mapView.addAnnotation(annotation)
         sender.isEnabled = true

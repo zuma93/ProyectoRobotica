@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813241A61DECA4B200B06818 /* Mango Car Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 813241A51DECA4B200B06818 /* Mango Car Portrait.png */; };
+		813C47D91DECB46A0005D5E6 /* CarPidiendo.png in Resources */ = {isa = PBXBuildFile; fileRef = 813C47D81DECB46A0005D5E6 /* CarPidiendo.png */; };
 		81DE81C41DCC07C800086F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE81C31DCC07C800086F27 /* AppDelegate.swift */; };
 		81DE81C61DCC07C800086F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE81C51DCC07C800086F27 /* ViewController.swift */; };
 		81DE81C91DCC07C800086F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DE81C71DCC07C800086F27 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		813241A51DECA4B200B06818 /* Mango Car Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mango Car Portrait.png"; path = "../../../../Mango Car Portrait.png"; sourceTree = "<group>"; };
+		813C47D81DECB46A0005D5E6 /* CarPidiendo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CarPidiendo.png; path = ../../../../CarPidiendo.png; sourceTree = "<group>"; };
 		81DE81C01DCC07C800086F27 /* Mango_Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango_Car.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DE81C31DCC07C800086F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81DE81C51DCC07C800086F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				81DE81CA1DCC07C800086F27 /* Assets.xcassets */,
 				81DE81CC1DCC07C800086F27 /* LaunchScreen.storyboard */,
 				81DE81CF1DCC07C800086F27 /* Info.plist */,
+				813C47D81DECB46A0005D5E6 /* CarPidiendo.png */,
+				813241A51DECA4B200B06818 /* Mango Car Portrait.png */,
 			);
 			path = Mango_Car;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			files = (
 				81DE81CE1DCC07C800086F27 /* LaunchScreen.storyboard in Resources */,
 				81DE81CB1DCC07C800086F27 /* Assets.xcassets in Resources */,
+				813241A61DECA4B200B06818 /* Mango Car Portrait.png in Resources */,
+				813C47D91DECB46A0005D5E6 /* CarPidiendo.png in Resources */,
 				81DE81C91DCC07C800086F27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BZFQ9VB5TM;
 				INFOPLIST_FILE = Mango_Car/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -292,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BZFQ9VB5TM;
 				INFOPLIST_FILE = Mango_Car/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
